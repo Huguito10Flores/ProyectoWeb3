@@ -1,0 +1,175 @@
+/*------------PARTE FONTS -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+
+body, html {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+/*----------PARTE HEADER-----------*/
+}
+.header {
+    color: white;
+    position: relative;
+    width: 100%;
+    height: calc(108vh - 50px);
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../IMG/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1; 
+}
+
+.header h1 {
+    font-family: "Angkor", serif;
+    font-size: 10vw;
+    margin: 120px 0 0 0;
+}
+
+.header h2 {
+    font-family: "Playwrite CO", cursive;
+    font-size: 3vw;
+    margin-top: -20px;
+    padding: 12px;
+}
+.header .highlight {
+    color: #FFD700;
+    font-family: "Creepster", system-ui;
+    font-size: 15vw;
+}
+.white-line {
+    width: 100%;
+    height: 43px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 245px;
+}
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header h2 {
+        font-size: 1em;
+    }
+}
+/*--------PARTE FOOTER----------*/
+/* Estilo general para el footer */
+footer {
+    background: linear-gradient(90deg, #2f2c55, #40285a);/* Mismo degradado que el navbar */
+    padding: 70px 30px 20px;
+    color: #fdfdfd; /* Texto en blanco */
+    font-family: cursive; /* Tipografía coherente */
+}
+
+/* Estilo de los íconos sociales */
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffc20e; /* Amarillo inspirado en el botón ACCEDER */
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #2f2c55; /* Azul oscuro coherente */
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #f7941e; /* Naranja al hacer hover */
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+/* Menú de navegación del footer */
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: #fdfdfd; /* Color blanco */
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: cursive; /* Mismo estilo de fuente */
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    background-color: #f7941e; /* Naranja al hacer hover */
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Sección inferior del footer */
+.footerBottom {
+    background-color: #15192C; /* Azul oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    font-family: cursive; /* Fuente consistente */
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}

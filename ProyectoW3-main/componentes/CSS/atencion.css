@@ -1,0 +1,130 @@
+/* Fondo general para la página, igual que en la página de eventos */
+body {
+    background: #ffc20e; /* Fondo amarillo claro */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor para el texto */
+.recovery-text {
+    background: #2f2c55; /* Fondo oscuro como en eventos */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 80%; /* Ajustar el ancho máximo */
+    margin: 50px auto; /* Centrar horizontalmente y añadir margen superior */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para un efecto destacado */
+    color: white; /* Texto en blanco */
+}
+
+/* Estilo del título */
+.recovery-text h2 {
+    font-size: 2.5rem;
+    color: #ffc20e; /* Amarillo para el título */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo del párrafo */
+.recovery-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0; /* Gris claro para el texto */
+    text-align: center;
+}
+
+/* Estilo del botón */
+.btn-recuperar {
+    display: block;
+    margin: 30px auto; /* Asegurar que el botón esté centrado horizontalmente */
+    padding: 10px 25px;
+    background-color: #ffc20e; /* Color amarillo */
+    color: #2f2c55; /* Texto oscuro */
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: fit-content; /* Ajustar el ancho según el contenido */
+}
+
+.btn-recuperar:hover {
+    background-color: #f7941e; /* Naranja al hacer hover */
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Estilo del enlace del correo */
+.email {
+    color: #ffc20e; /* Color amarillo para que combine con el diseño */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: #f7941e; /* Cambia a naranja al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* Estilo para los textos obligatorios */
+.obligatorio-text {
+    color: #ffc20e;
+    font-size: 1.2rem;
+}
+
+/* Botones de enviar y refrescar, aplicando el mismo estilo */
+.btn-comprar {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffc20e;
+    color: #2f2c55;
+    font-family: 'Cursive', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #f7941e;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Formulario centrado */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para los campos del formulario */
+.form-control {
+    border: 2px solid #ffc20e;
+    border-radius: 5px;
+}
+
+/* Mensaje de éxito */
+.enviado-text {
+    font-size: 1.2rem;
+    color: #28a745;
+}
+
+.captcha-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.captcha-container img {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.captcha-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+}
